@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مانتا | کلینیک زیبایی و لاغری</title>
+<meta name="description" content="کلینیک زیبایی و لاغری مانتا — مانتا، مسیری برای تغییر و درخشش. لاغری موضعی، تناسب اندام و خدمات زیبایی در گرگان. مشاوره اولیه رایگان.">
+<style>
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Regular.ttf");font-weight:400}
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Bold.ttf");font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#FAF6EF;
+  --bg-soft:#F3ECDF;
+  --card:#FFFDF9;
+  --line:#E7DCC8;
+  --sage:#7E9274; --sage-d:#43593F; --sage-bg:#EDF1E7;
+  --blue:#5B9DBE; --deepblue:#33627F; --baby:#EAF3F8; --sky:#CFE3EF;
+  --ink:#33302A; --muted:#8A8272;
+  --shadow:0 14px 34px rgba(112,96,68,.10);
+}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{font-family:"Vazirmatn",Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:15px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--deepblue);outline-offset:2px;border-radius:6px}
+.container{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* ── header ── */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 22px;max-width:1080px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:46px;width:auto;border-radius:10px}
+.brand div b{font-size:20px;color:var(--sage-d);display:block;line-height:1.3}
+.brand div small{display:block;font-size:11px;color:var(--muted);letter-spacing:2px;font-family:Arial}
+.links{display:flex;gap:24px;font-size:14px;color:#6a6353}
+.links a{padding:4px 2px;border-bottom:2px solid transparent;transition:border-color .2s}
+.links a:hover{border-color:var(--sage)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 26px;font-weight:700;font-size:14px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-sage{background:var(--sage-d);color:#fff}
+.btn-blue{background:var(--deepblue);color:#fff}
+.btn-wa{background:#3F9C5C;color:#fff}
+.phone{font-weight:700;color:var(--sage-d);font-size:15px;letter-spacing:.5px;direction:ltr}
+
+/* ── hero ── */
+.hero{padding:52px 0 44px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.slogan{font-size:13px;color:var(--sage-d)}
+.slogan span{background:var(--sage-bg);border:1px solid #D6DECB;border-radius:999px;padding:5px 16px}
+h1{font-size:clamp(28px,4.5vw,46px);line-height:1.55;color:var(--ink);margin:16px 0 8px;font-weight:700}
+h1 em{font-style:normal;color:var(--sage-d)}
+.lead{color:var(--muted);font-size:16px;max-width:460px}
+.hero-cta{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.hero-badges{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
+.hero-badges span{font-size:12.5px;color:#6a6353;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.hero-img img{width:100%;height:460px;object-fit:cover;border-radius:24px;display:block;box-shadow:var(--shadow)}
+.hero-img p{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+
+/* ── sections ── */
+section{padding:44px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 28px}
+.sec-head h2{font-size:clamp(21px,3vw,29px)}
+.sec-head p{font-size:14px;color:var(--muted);margin-top:4px}
+.divider{width:48px;height:3px;border-radius:99px;margin:0 auto 14px}
+
+/* ── slim ── */
+#slim{background:var(--bg-soft);border-radius:32px;border:1px solid var(--line)}
+#slim .divider{background:var(--sage)}
+#slim h2{color:var(--sage-d)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pkg{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 16px;text-align:center;transition:transform .18s,box-shadow .18s}
+.pkg:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.pkg h3{font-size:16px;color:var(--sage-d);margin-top:8px}
+.pkg small{font-size:12.5px;color:var(--muted)}
+.pkg ul{list-style:none;font-size:13px;color:#6a6353;margin:10px 0}
+.pkg .pr{font-size:19px;font-weight:700;border-top:1px solid var(--line);padding-top:12px;margin-top:10px}
+.pkg .pr span{display:block;font-size:12px;font-weight:400;color:var(--muted)}
+.pkg.feat{border:1.5px solid var(--sage);box-shadow:var(--shadow);position:relative}
+.pkg.feat::before{content:"پیشنهاد ما";position:absolute;top:-12px;right:50%;transform:translateX(50%);background:var(--sage-d);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:3px 14px;white-space:nowrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.slim2{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;text-align:center}
+.slim2 h3{font-size:15.5px;color:var(--sage-d)}
+.slim2 p{font-size:13px;color:var(--muted)}
+.slim2 .pr{font-size:20px;font-weight:700;margin-top:10px}
+.slim2 .pr span{font-size:12px;font-weight:400;color:var(--muted)}
+.info3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.info3 div{background:transparent;border:1px dashed #D9CCB0;border-radius:16px;padding:14px;text-align:center;font-size:13px;color:#6a6353}
+.info3 b{display:block;font-size:16px;color:var(--sage-d)}
+.slim-img{margin-top:18px;border-radius:20px;overflow:hidden}
+.slim-img img{width:100%;height:340px;object-fit:cover;object-position:center 60%;display:block}
+
+/* ── beauty ── */
+#beauty{background:var(--baby);border-radius:32px;border:1px solid var(--sky);margin-top:20px}
+#beauty .divider{background:var(--blue)}
+#beauty h2{color:var(--deepblue)}
+.b-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.b-card{background:var(--card);border:1px solid var(--sky);border-radius:20px;padding:22px 14px;text-align:center;transition:transform .18s,box-shadow .18s}
+.b-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.b-card h3{font-size:15px;color:var(--deepblue)}
+.b-card p{font-size:12.5px;color:#728896;min-height:44px}
+.b-card .pr{font-weight:700;color:var(--deepblue);font-size:16px;border-top:1px solid #E3EFF6;padding-top:12px;margin-top:10px}
+.b-wide{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.b-box{background:var(--card);border:1px solid var(--sky);border-radius:20px;padding:24px}
+.b-box h3{color:var(--deepblue);font-size:17px}
+.b-box p,.b-box li{font-size:13.5px;color:#5c7280;list-style:none}
+.b-box .pr{text-align:center;font-weight:700;color:var(--deepblue);font-size:17px;background:var(--baby);border-radius:14px;padding:12px;margin-top:14px}
+.beauty-img{margin-top:18px;border-radius:20px;overflow:hidden}
+.beauty-img img{width:100%;height:340px;object-fit:cover;object-position:center 65%;display:block}
+
+/* ── contact ── */
+#contact .box{background:linear-gradient(160deg,var(--bg-soft),#EFE5D0);border-radius:28px;padding:44px 30px;text-align:center;border:1px solid var(--line);margin-top:8px}
+#contact h2{font-size:23px;color:var(--sage-d)}
+#contact p{font-size:14px;color:#6b655a;max-width:520px;margin:8px auto}
+.call-big{display:inline-block;background:var(--sage-d);color:#fff;font-weight:700;font-size:22px;letter-spacing:1px;border-radius:999px;padding:10px 36px;margin:16px 0;direction:ltr}
+.contact-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.addr{margin-top:16px;font-size:14px;color:#6b655a}
+
+/* ── footer ── */
+footer{background:var(--bg-soft);border-top:1px solid var(--line);margin-top:24px}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;padding:30px 0 12px}
+.foot h4{color:var(--sage-d);font-size:15px;margin-bottom:6px}
+.foot p,.foot a{font-size:13.5px;color:#6b655a}
+.foot a:hover{color:var(--sage-d)}
+.copy{text-align:center;border-top:1px solid var(--line);margin-top:12px;padding:14px;font-size:12.5px;color:#938B7B}
+
+/* ── float buttons ── */
+.float{position:fixed;bottom:18px;left:18px;z-index:60;display:flex;flex-direction:column;gap:8px}
+.float a{background:var(--sage-d);color:#fff;border-radius:999px;padding:12px 20px;font-weight:700;font-size:14px;box-shadow:0 12px 28px rgba(67,89,63,.3)}
+.float a.wa{background:#3F9C5C;font-size:13px}
+
+@media(max-width:900px){
+  .hero{padding:36px 0 32px}
+  .hero-grid{grid-template-columns:1fr}
+  .grid4,.b-grid{grid-template-columns:1fr 1fr}
+  .grid2,.b-wide,.info3{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .links{display:none}
+  .hero-img img{height:380px}
+  .slim-img img,.beauty-img img{height:230px}
+}
+@media(max-width:520px){
+  .grid4,.b-grid{grid-template-columns:1fr}
+  .call-big{font-size:19px;padding:9px 26px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="brand">
+<img src="manta-logo.png" alt="لوگوی مانتا">
+<div><b>مانتا</b><small>MANTA CLINIC</small></div>
+</div>
+<nav class="links" aria-label="منوی اصلی"><a href="#slim">لاغری موضعی</a><a href="#beauty">زیبایی</a><a href="#contact">رزرو</a></nav>
+<a class="phone" href="tel:09162041853">📞 09162041853</a>
+</div>
+</header>
+
+<div class="container">
+<div class="hero">
+<div class="hero-grid">
+<div>
+<div class="slogan"><span>MANTA WELLNESS CENTER</span></div>
+<h1>مانتا، مسیری برای <em>تغییر و درخشش</em></h1>
+<p class="lead">مسیر لاغری، تناسب اندام و زیبایی را با مانتا هموار کن</p>
+<div class="hero-cta">
+<a href="#slim" class="btn btn-sage">تعرفه لاغری</a>
+<a href="#beauty" class="btn btn-blue">خدمات زیبایی</a>
+</div>
+<div class="hero-badges">
+<span>✅ مشاوره اولیه رایگان</span>
+<span>🩺 زیر نظر پزشک</span>
+<span>💎 برندهای معتبر</span>
+</div>
+</div>
+<div class="hero-img">
+<img src="manta-clinic.jpg" alt="فضای واقعی کلینیک مانتا — صندلی تخصصی، گیاهان و لوگوی مانتا روی دیوار">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+<section id="slim">
+<div class="sec-head">
+<div class="divider"></div>
+<h2>لاغری موضعی</h2>
+<p>برای هر جفت ناحیه از بدن • هر ناحیه به اندازه یک کف دست</p>
+</div>
+<div class="grid4">
+<div class="pkg"><div style="font-size:28px" aria-hidden="true">🌿</div><h3>پکیج اقتصادی</h3><small>برای اضافه وزن‌های کمتر</small><ul><li>۴ جلسه ترکیب دستگاه‌ها</li></ul><div class="pr">۶٬۰۰۰٬۰۰۰<span>تومان</span></div></div>
+<div class="pkg"><div style="font-size:28px" aria-hidden="true">🏅</div><h3>پکیج برنز</h3><small>شامل ۶ جلسه</small><ul><li>۶ جلسه ترکیب دستگاه‌ها</li></ul><div class="pr">۸٬۰۰۰٬۰۰۰<span>تومان</span></div></div>
+<div class="pkg"><div style="font-size:28px" aria-hidden="true">🥈</div><h3>پکیج نقره‌ای</h3><small>شامل ۸ جلسه</small><ul><li>۸ جلسه ترکیب دستگاه‌ها</li></ul><div class="pr">۹٬۰۰۰٬۰۰۰<span>تومان</span></div></div>
+<div class="pkg feat"><div style="font-size:28px" aria-hidden="true">👑</div><h3>پکیج طلایی</h3><small>شامل ۱۰ جلسه</small><ul><li>۱۰ جلسه ترکیب دستگاه‌ها</li></ul><div class="pr">۱۰٬۰۰۰٬۰۰۰<span>تومان</span></div></div>
+</div>
+<div class="grid2">
+<div class="slim2"><h3>پکیج اسلیم فیت — ۳ جفت ناحیه دلخواه</h3><p>هر جفت ناحیه جلسه‌ای ۷۰۰٬۰۰۰ تومان • ۳ جفت ناحیه می‌شود جلسه‌ای ۲٬۱۰۰٬۰۰۰ تومان</p><div class="pr">۲٬۱۰۰٬۰۰۰ تومان <span>/ هر جلسه</span></div></div>
+<div class="slim2"><h3>پکیج سوپر اسلیم — ۴ جفت ناحیه دلخواه</h3><p>هر جفت ناحیه جلسه‌ای ۶۰۰٬۰۰۰ تومان • ۴ جفت ناحیه می‌شود جلسه‌ای ۲٬۴۰۰٬۰۰۰ تومان</p><div class="pr">۲٬۴۰۰٬۰۰۰ تومان <span>/ هر جلسه</span></div></div>
+</div>
+<div class="info3">
+<div>🍎 رژیم با آنالیز تنها<b>۴۰۰٬۰۰۰ تومان</b></div>
+<div>📋 مشاوره و رژیم و آنالیز<b>۶۰۰٬۰۰۰ تومان</b></div>
+<div>🤚 هر ناحیه به اندازه<b>یک کف دست</b></div>
+</div>
+<div class="slim-img"><img src="manta-devices.jpg" alt="دستگاه‌های تخصصی لاغری موضعی کلینیک مانتا"></div>
+</section>
+
+<section id="beauty">
+<div class="sec-head">
+<div class="divider"></div>
+<h2>خدمات زیبایی</h2>
+<p>بوتاکس • مزوتراپی • میکرونیدلینگ • مزوژل • فیلر</p>
+</div>
+<div class="b-grid">
+<div class="b-card"><div style="font-size:28px" aria-hidden="true">✨</div><h3>بوتاکس هالیوودی</h3><p>مناسب خطوط ظریف پیشانی</p><div class="pr">۱٬۵۰۰٬۰۰۰ تومان</div></div>
+<div class="b-card"><div style="font-size:28px" aria-hidden="true">💦</div><h3>بوتاکس زیربغل</h3><p>کمک به کاهش تعریق</p><div class="pr">۲٬۵۰۰٬۰۰۰ تومان</div></div>
+<div class="b-card"><div style="font-size:28px" aria-hidden="true">🌸</div><h3>بوتاکس فول‌فیس</h3><p>شادابی کلی صورت</p><div class="pr">۲٬۵۰۰٬۰۰۰ تومان</div></div>
+<div class="b-card"><div style="font-size:28px" aria-hidden="true">🌙</div><h3>بوتاکس میگرن</h3><p>زیر نظر پزشک</p><div class="pr">۲٬۵۰۰٬۰۰۰ تومان</div></div>
+</div>
+<div class="b-wide">
+<div class="b-box"><h3>🌱 مزوتراپی با کوکتل‌های خارجی و معتبر</h3><p>ریزش مو • جوانسازی • آبرسانی • ترمیم جای جوش • چربی‌سوزی موضعی</p><div class="pr">هر سی‌سی ۱٬۵۰۰٬۰۰۰ الی ۲٬۵۰۰٬۰۰۰ تومان</div></div>
+<div class="b-box"><h3>💎 میکرونیدلینگ با مزوتراپی / PRP</h3><p>کمک به بافت و درخشش پوست</p><div class="pr">۲٬۵۰۰٬۰۰۰ الی ۳٬۵۰۰٬۰۰۰ تومان</div></div>
+</div>
+<div class="b-wide">
+<div class="b-box"><h3>💧 مزوژل — برند معتبر دارای لیبل</h3><p>آبرسانی و جوانسازی پوست</p><div class="pr">از ۴٬۰۰۰٬۰۰۰ / هر سی‌سی</div></div>
+<div class="b-box"><h3>💋 فیلر لب و صورت</h3><p>فرم‌دهی صورت — از ۶٬۰۰۰٬۰۰۰ / هر سی‌سی<br>لب هشتی و نچرال — از ۵٬۰۰۰٬۰۰۰ / هر سی‌سی</p><div class="pr">۵ تا ۶ میلیون / هر سی‌سی</div></div>
+</div>
+<div class="beauty-img"><img src="manta-room2.jpg" alt="فضای پذیرش کلینیک مانتا با صندلی تخصصی و شلف محصولات"></div>
+</section>
+
+<section id="contact">
+<div class="box">
+<h2>رزرو و مشاوره اولیه رایگان</h2>
+<p>برای آگاهی از تمامی خدمات و رزرو نوبت، تماس بگیرید یا در واتساپ پیام بدید</p>
+<div><span class="call-big">09162041853</span></div>
+<div class="contact-cta">
+<a href="tel:09162041853" class="btn btn-sage">📞 تماس بگیرید</a>
+<a href="https://wa.me/989162041853" class="btn btn-wa" target="_blank" rel="noopener">💬 پیام در واتساپ</a>
+</div>
+<p class="addr">📍 گرگان، عدالت ۱۴، ساختمان فارابی</p>
+</div>
+</section>
+</div>
+
+<footer>
+<div class="container">
+<div class="foot">
+<div><h4>مانتا</h4><p>مانتا، مسیری برای تغییر و درخشش<br>کلینیک زیبایی و لاغری — Manta Wellness Center</p></div>
+<div><h4>بخش‌ها</h4><p><a href="#slim">لاغری موضعی</a><br><a href="#beauty">خدمات زیبایی</a><br><a href="#contact">رزرو</a></p></div>
+<div><h4>تماس</h4><p>📞 <a href="tel:09162041853">09162041853</a><br>💬 <a href="https://wa.me/989162041853" target="_blank" rel="noopener">واتساپ مانتا</a><br>📍 گرگان، عدالت ۱۴، ساختمان فارابی</p></div>
+</div>
+<div class="copy">مانتا • ۱۴۰۵</div>
+</div>
+</footer>
+
+<div class="float">
+<a href="https://wa.me/989162041853" class="wa" target="_blank" rel="noopener" aria-label="پیام در واتساپ">💬 واتساپ</a>
+<a href="tel:09162041853" aria-label="تماس تلفنی">📞 09162041853</a>
+</div>
+</body>
+</html>
